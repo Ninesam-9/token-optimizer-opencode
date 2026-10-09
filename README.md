@@ -1,4 +1,4 @@
-# Token-Optimizer V2 — Reduce ~80% Token Usage Without Losing Productivity
+# Token-Optimizer V2 — Reduce 60–85% Token Usage Without Losing Productivity
 
 ![version](https://img.shields.io/badge/version-2.1.0-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
@@ -27,7 +27,7 @@ A drop-in efficiency protocol for AI coding assistants and chat models. It force
 | Dependency review | ~85 | ~28 | **−67%** |
 | Config consolidation | ~180 tok | ~45 tok | **−75%** |
 | Security audit | ~102 | ~22 | **−78%** |
-| Mean | — | — | **~75–80%** |
+| Mean | — | — | **~75%** |
 
 > Real savings vary with base verbosity (typical range 60–85%). Accuracy held constant in all test runs.
 

@@ -1,6 +1,6 @@
 ---
 name: token-optimizer
-description: Ultra-dense high-efficiency communication mode designed to reduce input/output tokens by ~80% while retaining 100% technical accuracy and productivity. Avoids fluff, preambles, conversational filler, and unneeded code repetition.
+description: Ultra-dense high-efficiency communication mode designed to reduce input/output tokens by 60–85% (mean ~75% measured) while retaining 100% technical accuracy and productivity. Avoids fluff, preambles, conversational filler, and unneeded code repetition.
 ---
 
 # Token Optimizer V2 (High-Performance)
