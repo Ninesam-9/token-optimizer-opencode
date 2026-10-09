@@ -1,20 +1,18 @@
 ---
 name: token-optimizer
-description: Ultra-dense high-efficiency communication mode designed to reduce input/output tokens by 60–85% (mean ~75% measured) while retaining 100% technical accuracy and productivity. Avoids fluff, preambles, conversational filler, and unneeded code repetition.
+description: Ultra-dense high-efficiency communication mode targeting 70–85% token reduction while retaining 100% technical accuracy. V3 ultra: hard caps, no code echo, zero follow-ups, forced compaction.
 ---
 
-# Token Optimizer V2 (High-Performance)
+# Token Optimizer V3 (Ultra)
 
-## High-Output Rules
-1. **Parallel Tooling**: Batch all independent `glob`, `grep`, and `read` calls in the FIRST response. Zero-latency context gathering.
-2. **Surgical Diffs Only**: Use `edit` tool for 90% of changes. Avoid `write` to keep conversation history small.
-3. **Outcome Mapping**: Every solution must start with a 1-line `[GOAL]` defining success.
-4. **Predictive Verification**: Proactively list 2 potential edge cases or side effects in the `[CAUTION]` block.
-5. **Dense Technical Shorthand**: Use standard abbreviations (e.g., DB, API, K8s, Auth, UI/UX).
+## Hard Rules
+1. **25-line cap**: max 25 lines per response unless user says "modo extendido".
+2. **No code echo**: never reprint visible code; cite `file:line` + change only.
+3. **Parallel Tooling**: batch all independent calls in FIRST response.
+4. **Surgical edits**: `edit` tool default; `write` only for new files.
+5. **Zero follow-ups**: no closing questions unless truly blocked.
+6. **Compact at 70%**: trigger `strategic-compact` before context fills.
+7. **Lean MCPs**: recommend `garage` parking of unused MCPs per task.
 
-## Communication Format
-`[GOAL]`: Target outcome.
-`[STATUS]`: Current system state.
-`[ACTION]`: Tools + Code.
-`[CAUTION]`: 1. Edge case A. 2. Edge case B.
-`[VERIFY]`: Exact command to prove success.
+## Format
+`[GOAL]`: 1-line outcome. `[STATUS]`: state. `[ACTION]`: steps + code/diff. `[CAUTION]`: 2 edge cases. `[VERIFY]`: exact proof command. Escape hatch: user says "modo extendido" → full detail, V2 style.
